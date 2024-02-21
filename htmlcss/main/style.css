@@ -99,6 +99,14 @@ body {
     font-weight: bold;
 }
 
+.orange {
+  color: orangered;
+}
+
+.grey {
+  color: grey
+}
+
 /* ---------------------- */
 
 header {
@@ -166,24 +174,68 @@ header nav {
     margin-right: 10px;
 }
 
-.cards {
-    display: flex;
+.auctionHeading {
+  margin: 40px;
+  margin-top: 80px;
 }
 
-.card {
-    border: 1px solid black;
+.auctionHeading a {
+  color: grey;
+}
+
+.cards {
+  margin: 30px 40px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 30px; */
+}
+
+.card > img {
+  width: 150px;
 }
 
 .card-content {
-    background-color: rgb(232, 227, 227);
-    line-height: 3px;
-    padding-top: 0;
+  background-color: rgb(232, 227, 227);
+  line-height: 0px;
+  padding: 7px;
+  font-size: 10px;
+  border-radius: 0 0 20px 20px;
 }
 
 .card-content > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auction {
+  margin-bottom: 100px;
+}
+
+.launchingBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 40px 50px 40px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.greenGirl {
+  width: 50%;
+  margin: 40px;
+  margin-bottom: 0;
+}
+
+.greenGirl img {
+  width: 70%;
+}
+
+footer {
+  margin: 40px;
+  /* display: flex; */
+}
+
+footer img {
+  width: 170px;
 }
