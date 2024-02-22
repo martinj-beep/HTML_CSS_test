@@ -1,79 +1,7 @@
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-
 
 body {
-    width: 800px;
+    max-width: 576px;
+    min-width: 575px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,203 +32,513 @@ body {
 
 /* ---------------------- */
 
-@media screen and (max-width: 576px) {
-
-  body {
-    max-width: 100%;
-  }
-
   .dontDisplayMobile {
     display: none;
   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px 10px 20px;
+  }
+
+  .headerIcon {
+    display: flex;
+    align-items: center;
+    width: 36px;
+  }
+
   .launching {
-    margin-left: 10px;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 50px;
   }
 
-  .launching div {
-    width: 80%;
+  .launching h1 {
+    font-size: 63px;
+    margin: 20px 0px;
   }
 
+  .launching p {
+    font-size: 23px;
+    margin: 20px 0px;
+  }
+
+.launching div {
+    width: 60%;
+    position: absolute;
+    left: 20px;
+    
+  }
+
+  .launching img {
+    width: 400px;
+    position: relative;
+    left: 250px;
 }
 
-@media screen and (min-width: 577px) {
+.gradientButton {
+  background-color: white;
+  padding: 20px 45px;
+  border: 3px solid orangered;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.freeNft {
+  background-image: linear-gradient(70deg, #f5537c, #ff5d0c, #60c06f);
+  padding: 60px 20px 20px 20px;
+  margin-bottom: 60px;
+}
+
+.freeNft h2 {
+  font-size: 55px;
+}
+
+.freeNft p {
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.icons {
+  margin: 20px 20px 70px 20px;
+}
+
+.icons div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.auctionHeading {
+  margin: 40px 20px;
+  margin-top: 80px;
+  }
+
+  .auctionHeading h2 {
+font-size: 55px;
+  }
+
+  .auctionHeading p {
+    font-size: 22px;
+    margin-right: 20px;
+    }
+
+  .auctionHeading a {
+  color: rgb(70, 70, 70);
+  }
+
+  .cards {
+    margin: 30px 0px 30px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    }
+
+    .card {
+      width: 80%;
+      margin-right: 30px;
+      display: inline-block;
+    }
+    
+    .card > img {
+    width: 100%;
+    display: block;
+      vertical-align: bottom;
+    }
+    
+    .card-content {
+    box-sizing: border-box;
+    background-color: rgb(232, 227, 227);
+    line-height: 0px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    }
+    
+    .card-content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .auction {
+    margin-bottom: 100px;
+    }
+
+    .launchingBottom {
+      display: flex;
+      justify-content: space-around;
+      overflow-x: hidden;
+      overflow-y: visible;
+      position: relative;
+      margin: 20px 0px 50px 0px;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      font-size: larger;
+      }
+
+      .launchingBottom h1 {
+        font-size: 63px;
+        margin: 20px 0px;
+      }
+    
+      .launchingBottom p {
+        font-size: 23px;
+        margin: 20px 0px;
+      }
+
+      .launchingBottomLeft {
+        width: 60%;
+        /* width: none; */
+        padding-left: 20px;
+        padding-top: 50px;
+        align-self: flex-start;
+      }
+      
+      .greenGirl {
+      width: 50%;
+      /* width: 1000px; */
+      overflow-x: hidden;
+      overflow-y: visible;
+      position: relative;
+      }
+      
+      .greenGirl img {
+      /* width: 100%; */
+      width: 300px;
+      margin-top: 150px;
+      display: block;
+      vertical-align: bottom;
+      position: relative;
+      left: 40px;
+      }
+
+      footer {
+        margin: 70px 20px 50px 20px
+        }
+        
+        footer img {
+        width: 250px;
+        }
+        
+        .footerMenu {
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+        }
+
+        .footerLogo {
+          font-size: 25px;
+        }
+
+        .socialLinks > * {
+          margin-right: 12px;
+          color: grey;
+          }
+        
+        .footerLinks {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          }
+        
+        .footerLinks div {
+        /* margin-left: 20px; */
+        margin-right: 100px;
+        font-size: 23px;
+        }
+        
+        .footerLinks ul {
+        padding-left: 0px;
+        }
+        
+        .footerLinks li {
+        list-style-type: none;
+        margin-bottom: 8px;
+        }
+        
+        .footerLinks a {
+        text-decoration: none;
+        color: grey;
+        }
+        
+        .copyright {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        color: rgb(172, 172, 172);
+        font-size: 20px;
+        }
+
+
+/* PC */
+
+@media screen and (min-width: 999px) {
+
+  body {
+    max-width: 1000px;
+  }
+
+  .dontDisplayMobile {
+    display: inline-block;
+  }
   
 .dontDisplayPc {
   display: none;
 }
 
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 40px 10px 40px;
+  margin: 40px 40px 0px 40px;
 }
 
-.headerIcon {
-    display: flex;
-    align-items: center;
-    width: 36px;
+.headerIcon img {
+  width: 128px;
 }
 
 header nav a {
-    text-decoration: none;
-    color: rgb(74, 73, 73);
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
+  text-decoration: none;
+  color: rgb(74, 73, 73);
+  margin-left: 15px;
+  font-size: 15px;
 }
 
 .launching {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px 40px 50px 40px;
-}
-
-.launching img {
-    width: 60%;
-}
-
-.gradientButton {
-    background-color: white;
-    padding: 10px 30px;
-    border: 2px solid orangered;
-    border-radius: 23px;
-}
-
-.freeNft {
-    background-image: linear-gradient(70deg, #f5537c, #ff5d0c, #60c06f);
-    margin: 0px 40px 60px 40px;
-    border-radius: 15px;
-}
-
-.freeNft div {
-    padding: 80px 0px 30px 30px;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 40px 30px 40px;
-}
-
-.icons img {
-    width: 18%;
-    margin-right: 10px;
-}
-
-.auctionHeading {
-  margin: 40px;
-  margin-top: 80px;
-}
-
-.auctionHeading a {
-  color: grey;
-}
-
-.cards {
-  margin: 30px 40px 30px 40px;
-  display: flex;
-  justify-content: space-between;
-  /* gap: 30px; */
-}
-
-.card > img {
-  width: 150px;
-}
-
-.card-content {
-  background-color: rgb(232, 227, 227);
-  line-height: 0px;
-  padding: 7px;
-  font-size: 10px;
-  border-radius: 0 0 20px 20px;
-}
-
-.card-content > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.auction {
-  margin-bottom: 100px;
-}
-
-.launchingBottom {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 20px 40px 50px 40px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  /* justify-content: space-between; */
+  margin: 0px 40px 50px 40px;
+  overflow: visible;
+  
+}
+
+.launching h1 {
+  font-size: 53px;
+  margin: 20px 0px;
+}
+
+.launching p {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.launching div {
+  width: 45%;
+}
+
+.launching img {
+  width: 70%;
+  position: relative;
+  /* position: absolute; */
+  left: 230px;
+}
+
+.freeNft {
+  background-image: linear-gradient(70deg, #f5537c, #ff5d0c, #60c06f);
+  margin: 0px 40px 60px 40px;
+  border-radius: 15px;
+}
+
+.freeNft div {
+  padding: 80px 0px 30px 30px;
+}
+
+.freeNft h2 {
+  font-size: 33px;
+}
+
+.freeNft p {
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+/* .icons {
+  margin: 20px 20px 70px 20px;
+}
+
+.icons div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+} */
+
+/* .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 40px 30px 40px;
+} */
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  justify-content: center;
+  margin: 20px 40px 30px 40px;
+  /* gap: 40px; */
+} 
+
+/* .icons div {
+  display: grid;
+  gap: 15px;
+} */
+
+.icons img {
+  width: auto;
+  height: 35px;
+  margin-right: 50px;
+}
+
+
+.auctionHeading {
+  margin: 40px;
+  }
+  
+  .auctionHeading h2 {
+    font-size: 35px;
+      }
+    
+      .auctionHeading p {
+        font-size: 16px;
+        margin-right: 20px;
+        }
+
+.cards {
+margin: 30px 40px 30px 40px;
+display: flex;
+justify-content: space-between;
+/* gap: 30px; */
+}
+
+.card > img {
+width: 100%;
+}
+
+.card-content {
+background-color: rgb(232, 227, 227);
+line-height: 0px;
+padding: 7px;
+font-size: 10px;
+border-radius: 0 0 20px 20px;
+}
+
+.card-content > div {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.auction {
+margin-bottom: 100px;
+}
+
+.launchingBottom {
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin: 20px 40px 50px 40px;
+border-top: 1px solid grey;
+border-bottom: 1px solid grey;
+}
+
+.launchingBottomLeft {
+  align-self: center;
 }
 
 .greenGirl {
-  width: 50%;
-  margin: 40px;
-  margin-bottom: 0;
+width: 50%;
+margin: 40px;
+margin-bottom: 0;
 }
 
 .greenGirl img {
-  width: 70%;
+width: 70%;
 }
 
 footer {
-  margin: 40px;
-  /* display: flex; */
+margin: 40px;
+/* display: flex; */
 }
 
 footer img {
-  width: 170px;
+width: 170px;
 }
 
 .footerMenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-.footerLinks {
-  display: flex;
-  align-content: first baseline;
-}
+/* .footerLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
 
 .footerLinks div {
-  margin-left: 20px;
+/* margin-left: 20px; */
+/* margin-right: 100px;
+font-size: 23px;
 }
 
 .footerLinks ul {
-  padding-left: 0px;
+padding-left: 0px;
 }
 
 .footerLinks li {
-  list-style-type: none;
-  margin-bottom: 8px;
+list-style-type: none;
+margin-bottom: 8px;
 }
 
 .footerLinks a {
-  text-decoration: none;
-  color: grey;
+text-decoration: none;
+color: grey;
+} */
+
+/* .footerLinks {
+display: flex;
+align-content: first baseline;
+} */
+.footerLinks{
+  grid-template-columns: repeat(4, 145px);
+  width: 60%;
+}
+
+.footerLinks div {
+margin-left: 5px;
+}
+
+.footerLinks ul {
+padding-left: 0px;
+}
+
+.footerLinks li {
+list-style-type: none;
+margin-bottom: 8px;
+}
+
+.footerLinks a {
+text-decoration: none;
+color: grey;
 }
 
 .socialLinks > * {
-  margin-right: 8px;
-  color: grey;
+margin-right: 8px;
+color: grey;
 }
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  color: rgb(172, 172, 172);
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+color: rgb(172, 172, 172);
+}
 }

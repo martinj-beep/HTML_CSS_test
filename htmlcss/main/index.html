@@ -37,7 +37,7 @@
         <a href="">Launch</a>
         <a href=""><span class="pink">Sign Up</span></a>
       </nav>
-      <div class="dontDisplayPc">
+      <div class="dontDisplayPc grey">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -46,39 +46,46 @@
         <div>
           <h4 class="pink bold">LAUNCHING SOON</h4>
           <h1 class="bold">An NFT like no other</h1>
-          <p>
+          <p class="grey">
             Don't miss out on the release of our new NFT. Sign up below to
             receive updates when we go live.
           </p>
-          <button class="gradientButton" type="button">Sign Up</button>
+          <button class="gradientButton bold" type="button">Sign Up</button>
         </div>
         <img src="/htmlcss/images/assets/graphic.png" alt="" />
       </section>
       <section class="freeNft">
         <div>
-          <h2 class="bold">Free NFT for early birds</h2>
+          <h2>Free NFT for early birds</h2>
           <p>Sign up today and you'll get a free NFT when we launch</p>
         </div>
       </section>
       <section class="icons">
-        <!-- <div> -->
-        <img
-          src="/htmlcss/images/assets/companies/1.svg"
-          alt="company boomerang"
-        />
-        <img src="/htmlcss/images/assets/companies/2.svg" alt="company blimo" />
-        <!-- </div> -->
-        <!-- <div> -->
-        <img src="/htmlcss/images/assets/companies/3.svg" alt="company qrco" />
-        <img
-          src="/htmlcss/images/assets/companies/4.svg"
-          alt="company opendoor"
-        />
-        <img
-          src="/htmlcss/images/assets/companies/5.svg"
-          alt="company droplet"
-        />
-        <!-- </div> -->
+        <div>
+          <img
+            src="/htmlcss/images/assets/companies/1.svg"
+            alt="company boomerang"
+          />
+          <img
+            src="/htmlcss/images/assets/companies/2.svg"
+            alt="company blimo"
+          />
+        </div>
+        <div>
+          <img
+            src="/htmlcss/images/assets/companies/3.svg"
+            alt="company qrco"
+          />
+          <img
+            class="dontDisplayMobile"
+            src="/htmlcss/images/assets/companies/4.svg"
+            alt="company opendoor"
+          />
+          <img
+            src="/htmlcss/images/assets/companies/5.svg"
+            alt="company droplet"
+          />
+        </div>
       </section>
       <section class="auction">
         <div class="auctionHeading">
@@ -184,14 +191,14 @@
         </div>
       </section>
       <section class="launchingBottom">
-        <div>
+        <div class="launchingBottomLeft">
           <h4 class="pink bold">LAUNCHING SOON</h4>
           <h1 class="bold">An NFT like no other</h1>
-          <p>
+          <p class="grey">
             Don't miss out on the release of our new NFT. Sign up below to
             receive updates when we go live.
           </p>
-          <button class="gradientButton" type="button">Sign Up</button>
+          <button class="gradientButton bold" type="button">Sign Up</button>
         </div>
         <div class="greenGirl">
           <img src="/htmlcss/images/assets/upsell-footer-image.svg" alt="" />
@@ -201,9 +208,11 @@
     <footer>
       <div class="footerMenu">
         <div>
-          <img src="/htmlcss/images/assets/logo.svg" alt="" />
-          <p class="grey">Exclusive NFT Collection</p>
-          <div class="socialLinks">
+          <div class="footerLogo">
+            <img src="/htmlcss/images/assets/logo.svg" alt="" />
+            <p class="grey">Exclusive NFT Collection</p>
+          </div>
+          <div class="socialLinks footerLogo">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -265,7 +274,7 @@
       </div>
       <div class="copyright">
         <p>&copy; Copyright 2022 NFTlanding</p>
-        <p>Launching August 2022</p>
+        <p class="dontDisplayMobile">Launching August 2022</p>
       </div>
     </footer>
   </body>
