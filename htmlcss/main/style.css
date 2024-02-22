@@ -71,7 +71,6 @@
   }
   
 
-/* PHONE */
 
 body {
     width: 800px;
@@ -84,10 +83,6 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-
-@media screen and (max-width: 576px) {
-    
-}
 
 /* --------STYLES-------- */
 
@@ -108,6 +103,35 @@ body {
 }
 
 /* ---------------------- */
+
+@media screen and (max-width: 576px) {
+
+  body {
+    max-width: 100%;
+  }
+
+  .dontDisplayMobile {
+    display: none;
+  }
+
+  .launching {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .launching div {
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 577px) {
+  
+.dontDisplayPc {
+  display: none;
+}
+
+}
 
 header {
     display: flex;
@@ -238,4 +262,45 @@ footer {
 
 footer img {
   width: 170px;
+}
+
+.footerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLinks {
+  display: flex;
+  align-content: first baseline;
+}
+
+.footerLinks div {
+  margin-left: 20px;
+}
+
+.footerLinks ul {
+  padding-left: 0px;
+}
+
+.footerLinks li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: grey;
+}
+
+.socialLinks > * {
+  margin-right: 8px;
+  color: grey;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  color: rgb(172, 172, 172);
 }
