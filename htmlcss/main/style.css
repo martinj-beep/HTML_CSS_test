@@ -48,6 +48,10 @@ body {
     width: 36px;
   }
 
+  header .fa-bars {
+    font-size: 30px;
+  }
+
   .launching {
     display: flex;
     align-items: center;
